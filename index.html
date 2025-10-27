@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Beruanggggkuuuuu 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="cover-page" class="page active">
+        <div class="particles" aria-hidden="true"></div>
+        <h1>Selamat Ulang Tahun, <span class="highlight">Tasya Adelia Ramadhani</span>!</h1>
+        <p>Aku punya sebuah perjalanan kecil spesial buat kamu...</p>
+        <div id="gift-box" class="bounce-in">
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+            <div class="ribbon"></div>
+            <div class="bow"></div>
+        </div>
+        <p class="click-me fade-in-delay">(Klik kadonya untuk membuka)</p>
+    </div>
+
+    <div id="intro-message-page" class="page" style="display:none;">
+        <div class="background-animation"></div>
+        <div class="card fade-in-up">
+            <h2 class="typing-text"></h2>
+            <p class="message-content"></p>
+            <button id="start-journey-btn" class="main-btn pulse">Mulai Perjalanan Kita <i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div id="gallery-page" class="page" style="display:none;">
+        <div class="floating-hearts"></div>
+        <div class="card slide-in-right">
+            <h2>✨ Galeri Kenangan Indah Kita ✨</h2>
+            <p>Maaf aku gakbisa masukin banyak karena datanya di handphone...</p>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/200/FFC0CB/FFFFFF?text=Foto+1" data-full="https://via.placeholder.com/800/FFC0CB/FFFFFF?text=Foto+1+Besar" alt="Kenangan 1" class="gallery-item">
+                <img src="https://via.placeholder.com/200/ADD8E6/FFFFFF?text=Foto+2" data-full="https://via.placeholder.com/800/ADD8E6/FFFFFF?text=Foto+2+Besar" alt="Kenangan 2" class="gallery-item">
+                <img src="https://via.placeholder.com/200/90EE90/FFFFFF?text=Foto+3" data-full="https://via.placeholder.com/800/90EE90/FFFFFF?text=Foto+3+Besar" alt="Kenangan 3" class="gallery-item">
+                <img src="https://via.placeholder.com/200/DDA0DD/FFFFFF?text=Foto+4" data-full="https://via.placeholder.com/800/DDA0DD/FFFFFF?text=Foto+4+Besar" alt="Kenangan 4" class="gallery-item">
+                </div>
+            <button class="nav-btn prev-page" data-target="intro-message-page"><i class="fas fa-arrow-left"></i> Kembali</button>
+            <button class="nav-btn next-page" data-target="reasons-page">Selanjutnya <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <div id="reasons-page" class="page" style="display:none;">
+        <div class="star-background"></div>
+        <div class="card pop-in">
+            <h2>❤️ Ini Alasan aku Cinta Beruangggg ❤️</h2>
+            <p>Setiap hari bertahan karena hal ini...</p>
+            <div class="reason-display">
+                <div id="reason-card" class="reason-card">
+                    <p class="reason-text-content">Klik tombol di bawah!</p>
+                </div>
+                <button id="next-reason-btn" class="main-btn glow">Alasan Selanjutnya!</button>
+            </div>
+            <button class="nav-btn prev-page" data-target="gallery-page"><i class="fas fa-arrow-left"></i> Kembali</button>
+            <button class="nav-btn next-page" data-target="secret-message-page">Pesan Rahasia <i class="fas fa-key"></i></button>
+        </div>
+    </div>
+
+    <div id="secret-message-page" class="page" style="display:none;">
+        <div class="magical-aura"></div>
+        <div class="card swirl-in">
+            <h2>🗝️ Pesan Rahasia Untuk Beruangggg 🗝️</h2>
+            <p>Untuk membukanya, ketik tanggal spesial kita (DDMMYY) pada kolom di bawah lalu tekan "Buka Rahasia".</p>
+            <input type="text" id="secret-input" placeholder="Masukkan tanggal (DDMMYY)">
+            <button id="unlock-secret-btn" class="main-btn shimmer">Buka Rahasia!</button>
+            <div id="secret-content" class="hidden bounce-in" role="region" aria-label="Pesan rahasia">
+                <p>
+                    Beruangggg sayangnya akuuuuuuuuuuuu,
+                    <br><br>
+                    Di hari spesial kamu ini aku pengen kamu tahu betapa sayang nya aku sama kamu. Setiap kali liat kamu aku selalu ngebayangin apapun yang indah aja intinya, kadang jorok juga dikit hehe.
+                    <br><br>
+                    Semoga tahun ini membawa kebahagiaan, kesehatan, dan segala yang kamu inginkan terkabul yah. Aku gak sabar banget pengen pegang nen kamu, jangan lupa janjinya yahhhh 😘😘😝❤️                </p>
+                <p class="signature">Dengan semua cintaku, Panda ❤️</p>
+            </div>
+            <!-- Scratch area removed: using secret code only -->
+            <button class="nav-btn prev-page" data-target="reasons-page"><i class="fas fa-arrow-left"></i> Kembali</button>
+            <button class="nav-btn next-page" data-target="final-page">Selesai <i class="fas fa-gift"></i></button>
+        </div>
+    </div>
+
+    <div id="final-page" class="page" style="display:none;">
+        <div class="confetti-animation"></div>
+        <div class="card zoom-in">
+            <h2>🎉 Selamat Ulang Tahun Sekali Lagi Sayangkuuuuu! 🎉</h2>
+            <p>Terima kasih sudah menjadi bagian terindah dalam hidup aku.</p>
+            <p class="final-wish">Semoga kebahagiaan selalu menyertai kamu, sayangku.</p>
+            <img src="/src/gif.gif" class="final-image pulse-infinite">
+            <p class="footer-credit">Made with an ocean of love by Panda ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
