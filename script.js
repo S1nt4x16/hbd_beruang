@@ -115,12 +115,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate gallery (dynamic placeholder example)
     // You'll replace these with your actual image URLs
     const galleryPlaceholderImages = [
-        "/src/5.jpg",
-        "/src/4.jpg",
-        "/src/2.jpg",
-        "/src/6.jpg",
-        "/src/1.jpg",
-        "/src/3.jpg"
+        "src/5.jpg",
+        "src/4.jpg",
+        "src/2.jpg",
+        "src/6.jpg",
+        "src/1.jpg",
+        "src/3.jpg"
     ];
 
     const galleryGrid = document.querySelector('.gallery-grid');
@@ -282,5 +282,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // const audio = new Audio('success.mp3');
         // audio.play();
     }
+
 
 });
